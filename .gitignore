@@ -1,0 +1,11 @@
+# Project exclude paths
+/.gradle/
+build
+# !build/libs/Nebula-Utils-*.jar
+/build/classes/java/main/
+.idea
+/run
+/run-data
+/src/generated/*
+/bin/
+gradle.properties
