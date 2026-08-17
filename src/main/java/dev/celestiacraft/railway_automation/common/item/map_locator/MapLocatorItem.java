@@ -30,10 +30,6 @@ public class MapLocatorItem extends Item {
 		super(properties);
 	}
 
-	public boolean isFoil(@NotNull ItemStack stack) {
-		return stack.hasTag();
-	}
-
 	@Override
 	public @NotNull InteractionResultHolder<ItemStack> use(Level level, Player player, @NotNull InteractionHand hand) {
 		ItemStack stack = player.getItemInHand(hand);
