@@ -23,7 +23,7 @@ group = mod_group_id
 version = mod_version
 
 base {
-	archivesName = "Create Railway Automation"
+	archivesName = "Create-RA"
 }
 
 java {
@@ -90,6 +90,10 @@ repositories {
 		name = "ForgeConfigAPIPort"
 		url = "https://raw.githubusercontent.com/Fuzss/modresources/main/maven/"
 	}
+	maven {
+		name = "CurseForge"
+		url "https://cursemaven.com"
+	}
 }
 
 dependencies {
@@ -104,6 +108,9 @@ dependencies {
 	implementation fg.deobf("io.github.llamalad7:mixinextras-forge:0.4.1")
 
 	minecraft "net.minecraftforge:forge:${minecraft_version}-${forge_version}"
+
+	// 汽鸣铁道
+	runtimeOnly fg.deobf("curse.maven:create-steam-n-rails-688231:7758640")
 	// Lomkok
 	compileOnly 'org.projectlombok:lombok:1.18.28'
 	annotationProcessor 'org.projectlombok:lombok:1.18.28'
