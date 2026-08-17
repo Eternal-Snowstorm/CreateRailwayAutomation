@@ -16,5 +16,6 @@ public class RABlockEntity {
 	}
 
 	public static void register() {
+		RailwayAutomation.LOGGER.info("{} BlockEntities is Registered!", RailwayAutomation.NAME);
 	}
 }

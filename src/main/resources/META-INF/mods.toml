@@ -1,7 +1,7 @@
-
 modLoader = "javafml"
 loaderVersion = "${loader_version_range}"
 license = "${mod_license}"
+logoFile = "logo.png"
 [[mods]]
 modId = "${mod_id}"
 version = "${mod_version}"
@@ -18,5 +18,11 @@ side = "BOTH"
 modId = "minecraft"
 mandatory = true
 versionRange = "${minecraft_version_range}"
+ordering = "NONE"
+side = "BOTH"
+[[dependencies."${mod_id}"]]
+modId = "create"
+mandatory = true
+versionRange = "[6.0.0,)"
 ordering = "NONE"
 side = "BOTH"

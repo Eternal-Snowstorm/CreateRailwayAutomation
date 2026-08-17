@@ -26,5 +26,6 @@ public class RABlock {
 	}
 
 	public static void register() {
+		RailwayAutomation.LOGGER.info("{} Blocks is Registered!", RailwayAutomation.NAME);
 	}
 }
